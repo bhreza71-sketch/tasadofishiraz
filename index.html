@@ -3,86 +3,124 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="خریدار خودرو تصادفی، چپی، سوخته و آسیب دیده در شیراز و سراسر ایران با تسویه آنی">
-<title>تصادفی | خریدار خودرو تصادفی</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101010">
+<meta name="description" content="تصادفی، خریدار خودرو تصادفی، چپی، سوخته و آسیب دیده در شیراز و سراسر ایران با بهترین قیمت و تسویه آنی.">
+<meta name="robots" content="index,follow">
+<title>تصادفی | خریدار تخصصی خودروهای تصادفی</title>
 
 <style>
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
-margin:0;
-background:#101010;
-color:#f7f3e9;
-font-family:Tahoma,Arial,sans-serif;
-line-height:1.9
+margin:0;background:#101010;color:#eee;
+font-family:Tahoma,Arial,sans-serif;line-height:2
 }
+:root{--gold:#d6ae58;--dark:#171717;--muted:#aaa}
+a{text-decoration:none;color:inherit}
 header{
-padding:16px 6%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#191919;
-border-bottom:1px solid #b89142
+position:sticky;top:0;z-index:10;
+background:#111e;
+backdrop-filter:blur(12px);
+border-bottom:1px solid #80632f;
+padding:12px 6%;
+display:flex;justify-content:space-between;
+align-items:center
 }
-.logo,h1,h2{color:#e5bb62}
-.logo{font-size:28px;font-weight:bold}
-a{color:inherit;text-decoration:none}
+.logo{font-size:28px;color:var(--gold);font-weight:bold}
+nav{display:flex;gap:20px;font-size:13px}
+nav a:hover{color:var(--gold)}
 .hero{
-text-align:center;
-padding:65px 18px 55px;
-background:linear-gradient(135deg,#282016,#080808)
+min-height:570px;display:flex;align-items:center;
+justify-content:center;text-align:center;
+padding:65px 18px;
+background:
+linear-gradient(90deg,#080808d9,#080808a8),
+url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85')
+center/cover
 }
-.hero h1{font-size:clamp(27px,5vw,42px)}
-.hero p{color:#ddd;font-size:18px}
+.hero-content{max-width:750px}
+.tag{
+display:inline-block;border:1px solid var(--gold);
+color:var(--gold);padding:4px 18px;border-radius:30px
+}
+h1{font-size:clamp(29px,5vw,49px);line-height:1.7}
+h1,h2,h3{color:var(--gold)}
+.hero p{font-size:17px;color:#eee}
 .btn{
-display:inline-block;
-background:#d8b45c;
-color:#17120a;
-padding:12px 24px;
-border-radius:12px;
-font-weight:bold;
-margin:8px;
-border:0;
-cursor:pointer;
-font-size:16px
+display:inline-block;padding:12px 24px;
+border-radius:9px;margin:7px;
+background:var(--gold);color:#17120a;
+font-weight:bold;border:0;cursor:pointer
 }
-.green{background:#168c51;color:white}
-.wrap{max-width:850px;margin:auto;padding:30px 18px}
-section{padding:25px 0;text-align:center}
+.btn.green{background:#16864b;color:white}
+.wrap{max-width:1100px;margin:auto;padding:45px 18px}
+.center{text-align:center}
+.section-title{text-align:center;margin-bottom:28px}
+.section-title p{color:var(--muted)}
+.grid{
+display:grid;grid-template-columns:repeat(3,1fr);
+gap:18px
+}
+.card{
+background:#1c1c1c;border:1px solid #514329;
+border-radius:15px;overflow:hidden;
+transition:.25s
+}
+.card:hover{transform:translateY(-5px);border-color:var(--gold)}
+.card img{width:100%;height:205px;object-fit:cover;display:block}
+.card-body{padding:16px}
+.card h3{margin:0 0 7px}
+.card p{color:#bbb;font-size:14px;margin:0}
+.benefits{
+display:grid;grid-template-columns:repeat(4,1fr);
+gap:13px
+}
+.benefit{
+text-align:center;background:#1d1d1d;
+border:1px solid #493b23;border-radius:13px;padding:18px
+}
+.benefit strong{color:var(--gold);display:block}
 .panel{
-background:#202020;
-border:1px solid #55482e;
-border-radius:18px;
-padding:22px;
-text-align:right
+background:#1d1d1d;border:1px solid #55452a;
+padding:25px;border-radius:16px
 }
-label{
-display:block;
-margin:12px 0 4px;
-color:#e5bb62
-}
+label{display:block;color:var(--gold);margin:13px 0 5px}
 input,select,textarea{
-width:100%;
-padding:13px;
-border-radius:9px;
-border:1px solid #777;
-background:#fff;
-color:#222;
-font:inherit
+width:100%;padding:13px;border-radius:8px;
+border:1px solid #777;background:#f7f7f7;
+color:#222;font:inherit
 }
-textarea{min-height:90px}
-button{font-family:inherit}
-.hint{color:#bbb;font-size:13px}
+textarea{min-height:100px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.full{grid-column:1/-1}
 .contact{
-text-align:center;
-background:#191919;
-padding:28px 15px
+background:#1a1a1a;text-align:center;
+border-top:1px solid #80632f;padding:35px 15px
 }
-footer{
-text-align:center;
-color:#aaa;
-padding:20px;
-font-size:13px
+footer{text-align:center;color:#999;padding:20px;font-size:12px}
+.notice{
+display:none;position:fixed;inset:0;z-index:30;
+background:#000c;align-items:center;justify-content:center;
+padding:18px
+}
+.notice-box{
+width:100%;max-width:450px;background:#202020;
+border:1px solid var(--gold);border-radius:16px;
+padding:24px;text-align:center
+}
+.notice-box p{color:#eee}
+@media(max-width:750px){
+nav{gap:9px;font-size:11px}
+.grid{grid-template-columns:1fr 1fr}
+.benefits{grid-template-columns:1fr 1fr}
+.hero{min-height:470px}
+}
+@media(max-width:480px){
+.grid{grid-template-columns:1fr}
+.form-grid{grid-template-columns:1fr}
+.full{grid-column:auto}
+.logo{font-size:23px}
 }
 </style>
 </head>
@@ -91,142 +129,244 @@ font-size:13px
 
 <header>
 <div class="logo">تصادفی</div>
+<nav>
+<a href="#services">خدمات</a>
+<a href="#why">مزایای ما</a>
 <a href="#form">ثبت خودرو</a>
+<a href="#contact">تماس</a>
+</nav>
 </header>
 
-<div class="hero">
-<h1>خریدار انواع خودرو تصادفی</h1>
-
+<section class="hero">
+<div class="hero-content">
+<span class="tag">مجموعه تخصصی خرید خودرو</span>
+<h1>خریدار انواع خودرو تصادفی در سراسر ایران</h1>
 <p>
-خرید خودروهای تصادفی، چپی، سوخته و آسیب‌دیده با بهترین قیمت
+خرید خودروهای تصادفی، چپی، سوخته و آسیب‌دیده
+با بهترین قیمت و تسویه آنی
 </p>
-
-<p>تسویه آنی | کارشناسی | مشاوره خرید و فروش</p>
-
 <a class="btn green" href="https://wa.me/989178037973">
-ارتباط مستقیم واتساپ
+ارتباط مستقیم با مدیریت
 </a>
-
-<a class="btn" href="#form">
-ثبت مشخصات خودرو
-</a>
-</div>
-
-<main class="wrap">
-
-<section>
-<h2>خدمات مجموعه تصادفی</h2>
-
-<div class="panel">
-<p>✓ خرید انواع خودرو تصادفی و آسیب‌دیده</p>
-<p>✓ اعلام قیمت و کارشناسی</p>
-<p>✓ تسویه آنی پس از توافق</p>
-<p>✓ مشاوره خرید و فروش خودرو</p>
+<a class="btn" href="#form">ثبت مشخصات خودرو</a>
 </div>
 </section>
 
-<section id="form">
-<h2>فرم ثبت خودرو و درخواست قیمت</h2>
+<main>
+
+<section class="wrap" id="services">
+<div class="section-title">
+<h2>خدمات تخصصی مجموعه تصادفی</h2>
+<p>خرید انواع خودروهای داخلی و خارجی</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=850&q=80" alt="خودرو پورشه">
+<div class="card-body">
+<h3>خودروهای تصادفی ایرانی</h3>
+<p>پژو، پراید، سمند، دنا، تیبا و سایر خودروهای داخلی</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=850&q=80" alt="خودروی اسپرت">
+<div class="card-body">
+<h3>خودروهای خارجی</h3>
+<p>خرید انواع خودروهای خارجی و لوکس</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=850&q=80" alt="خودروی لوکس">
+<div class="card-body">
+<h3>بنز و بی ام و</h3>
+<p>بررسی و خرید خودروهای لوکس آسیب‌دیده</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="wrap" id="why">
+<div class="section-title">
+<h2>چرا مجموعه تصادفی؟</h2>
+<p>اعتماد، سرعت و قیمت‌گذاری منصفانه</p>
+</div>
+
+<div class="benefits">
+<div class="benefit">
+<strong>تسویه آنی</strong>
+<p>پرداخت پس از توافق</p>
+</div>
+<div class="benefit">
+<strong>کارشناسی</strong>
+<p>بررسی وضعیت خودرو</p>
+</div>
+<div class="benefit">
+<strong>سراسر ایران</strong>
+<p>پذیرش درخواست از تمام کشور</p>
+</div>
+<div class="benefit">
+<strong>مشاوره رایگان</strong>
+<p>راهنمایی خرید و فروش</p>
+</div>
+</div>
+</section>
+
+<section class="wrap" id="form">
+<div class="section-title">
+<h2>ثبت مشخصات خودرو</h2>
+<p>اطلاعات خود را وارد کنید تا برای بررسی با شما تماس بگیریم.</p>
+</div>
 
 <div class="panel">
-
 <form id="carForm">
+<div class="form-grid">
 
+<div>
 <label for="name">نام و نام خانوادگی</label>
 <input id="name" required placeholder="نام شما">
+</div>
 
-<label for="phone">شماره تماس شما</label>
+<div>
+<label for="phone">شماره تماس</label>
 <input id="phone" required inputmode="tel" placeholder="09xxxxxxxxx">
+</div>
 
+<div>
 <label for="car">نوع و مدل خودرو</label>
 <input id="car" required placeholder="مثلاً پژو ۲۰۶ مدل ۱۳۹۸">
+</div>
 
+<div>
 <label for="damage">وضعیت خودرو</label>
-
 <select id="damage" required>
 <option value="">انتخاب کنید</option>
 <option>تصادفی</option>
 <option>چپی</option>
 <option>سوخته</option>
-<option>آسیب‌دیده</option>
+<option>آسیب دیده</option>
 <option>اوراقی</option>
 <option>سایر</option>
 </select>
+</div>
 
-<label for="city">شهر / محل خودرو</label>
+<div class="full">
+<label for="city">شهر محل خودرو</label>
 <input id="city" placeholder="مثلاً شیراز">
+</div>
 
-<label for="details">توضیحات و قیمت پیشنهادی (اختیاری)</label>
-<textarea id="details" placeholder="میزان خسارت، وضعیت مدارک و توضیحات..."></textarea>
+<div class="full">
+<label for="details">توضیحات و میزان خسارت</label>
+<textarea id="details" placeholder="توضیحات بیشتر درباره وضعیت خودرو..."></textarea>
+</div>
 
+<div class="full center">
 <button class="btn green" type="submit">
 ارسال درخواست به واتساپ مدیریت
 </button>
+</div>
 
-<p class="hint">
-پس از ثبت مشخصات، پیام راهنمای ارسال تصاویر خودرو نمایش داده می‌شود.
-</p>
-
+</div>
 </form>
+</div>
+</section>
 
+<section class="wrap center">
+<h2>مراحل فروش خودرو به مجموعه تصادفی</h2>
+<div class="panel">
+<p>۱. ثبت مشخصات خودرو در سایت</p>
+<p>۲. ارسال تصاویر خودرو در واتساپ</p>
+<p>۳. بررسی و کارشناسی خودرو</p>
+<p>۴. اعلام قیمت و توافق</p>
+<p>۵. تسویه و انجام معامله</p>
+</div>
+</section>
+
+<section class="wrap">
+<div class="section-title">
+<h2>سؤالات متداول</h2>
+</div>
+<div class="panel">
+<h3>آیا خودروهای تصادفی خریداری می‌کنید؟</h3>
+<p>بله، انواع خودروهای تصادفی و آسیب‌دیده بررسی و قیمت‌گذاری می‌شوند.</p>
+<h3>آیا از شهرهای دیگر هم خودرو می‌خرید؟</h3>
+<p>بله، درخواست از سراسر ایران پذیرفته می‌شود.</p>
+<h3>چگونه قیمت خودرو مشخص می‌شود؟</h3>
+<p>پس از دریافت مشخصات و تصاویر و بررسی وضعیت خودرو، قیمت اعلام می‌شود.</p>
+<h3>تسویه چه زمانی انجام می‌شود؟</h3>
+<p>پس از توافق نهایی و انجام معامله، تسویه انجام می‌شود.</p>
 </div>
 </section>
 
 </main>
 
-<div class="contact">
-
-<h2>ارتباط با مدیریت</h2>
-
-<p>رضا بهرامی</p>
-
-<p>شماره تماس و واتساپ: 09178037973</p>
-
-<a class="btn green" href="https://wa.me/989178037973">
-پیام در واتساپ
-</a>
-
-<a class="btn" href="tel:09178037973">
-تماس تلفنی
-</a>
-
+<div class="contact" id="contact">
+<h2>ارتباط با مدیریت مجموعه</h2>
+<p>مدیریت: رضا بهرامی</p>
+<p>تلفن و واتساپ: 09178037973</p>
+<a class="btn green" href="https://wa.me/989178037973">گفت‌وگو در واتساپ</a>
+<a class="btn" href="tel:09178037973">تماس تلفنی</a>
+<p>شیراز و حومه | ارائه خدمات در سراسر ایران</p>
 </div>
 
 <footer>
-© مجموعه تصادفی | مدیریت: رضا بهرامی
+© مجموعه تصادفی | مدیریت رضا بهرامی
 </footer>
 
+<div class="notice" id="notice">
+<div class="notice-box">
+<h3>کاربر محترم، توجه فرمایید</h3>
+<p>
+برای کارشناسی دقیق‌تر و تعیین قیمت بهتر، لطفاً پس از ارسال مشخصات خودرو، تصاویر کامل خودرو شامل نمای جلو، عقب، طرفین و قسمت‌های آسیب‌دیده را در واتساپ به مدیریت مجموعه ارسال فرمایید.
+</p>
+<p>با تشکر از اعتماد شما</p>
+<strong style="color:#d6ae58">مجموعه تصادفی | رضا بهرامی</strong>
+<br>
+<button class="btn green" id="continueBtn">متوجه شدم، ورود به واتساپ</button>
+<button class="btn" id="cancelBtn">بازگشت</button>
+</div>
+</div>
+
 <script>
+const form=document.getElementById('carForm');
+const notice=document.getElementById('notice');
+let whatsappMessage='';
 
-document.getElementById('carForm').addEventListener('submit',function(e){
-
+form.addEventListener('submit',function(e){
 e.preventDefault();
 
 const v=id=>document.getElementById(id).value.trim();
 
-const message =
-'کاربر محترم، برای کارشناسی دقیق‌تر و تعیین قیمت بهتر، لطفاً پس از ارسال مشخصات خودرو، تصاویر کامل خودرو شامل نمای جلو، عقب، طرفین و قسمت‌های آسیب‌دیده را در واتساپ به مدیریت مجموعه ارسال فرمایید.\n\nبا تشکر از اعتماد شما\nمجموعه تصادفی | رضا بهرامی';
+const phone=v('phone');
+if(!/^(\+98|0098|0)?9\d{9}$/.test(phone)){
+alert('لطفاً شماره موبایل معتبر وارد کنید.');
+return;
+}
 
-alert(message);
-
-const msg =
-`سلام، درخواست ثبت خودرو در سایت تصادفی دارم:
+whatsappMessage=`سلام، درخواست ثبت خودرو در سایت تصادفی دارم:
 
 نام: ${v('name')}
-شماره تماس: ${v('phone')}
+شماره تماس: ${phone}
 خودرو: ${v('car')}
 وضعیت: ${v('damage')}
-محل خودرو: ${v('city') || 'ذکر نشده'}
-توضیحات: ${v('details') || 'ندارد'}
+شهر: ${v('city')||'ذکر نشده'}
+توضیحات: ${v('details')||'ندارد'}
 
-تصاویر خودرو را نیز در واتساپ ارسال خواهم کرد.`;
+تصاویر خودرو را نیز برای کارشناسی ارسال می‌کنم.`;
 
-window.location.href =
-'https://wa.me/989178037973?text='+
-encodeURIComponent(msg);
-
+notice.style.display='flex';
 });
 
+document.getElementById('continueBtn').addEventListener('click',function(){
+window.location.href='https://wa.me/989178037973?text='+encodeURIComponent(whatsappMessage);
+});
+
+document.getElementById('cancelBtn').addEventListener('click',function(){
+notice.style.display='none';
+});
 </script>
 
 </body>
